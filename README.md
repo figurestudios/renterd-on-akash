@@ -14,6 +14,11 @@ Now, as soon as you have contracts formed, you can upload/download files manuall
 
 ## Examples
 
+### Python
+
+- [Uploading over internet](https://github.com/figurestudios/renterd-on-akash/blob/main/upload.py)
+- [Downloading over internet](https://github.com/figurestudios/renterd-on-akash/blob/main/download.py)
+
 ## API Usage
 
 ### Uploading
