@@ -2,7 +2,7 @@
 
 ## Testing
 
-We will be using the GUI example from [renterd_gui.yml]() to give us a web interface for easy testing of Sia's renterd software on Akash.
+We will be using the GUI example from [renterd_gui.yml](https://github.com/figurestudios/renterd-on-akash/blob/main/renterd_gui.yml) to give us a web interface for easy testing of Sia's renterd software on Akash.
 
 On the left side off the screen close to the bottom, you can click on the wallet icon and then press "Receive" to get your address. Using this address, you can request funds from the [testnet](https://zen.sia.tech/faucet) to be able to form contracts and pay for storage.
 
