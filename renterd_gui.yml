@@ -1,0 +1,40 @@
+---
+  version: "2.0"
+  
+  services:
+    app:
+      image: figureprod/siatestnet:0.0.1
+      env:
+          - "RENTERD_API_PASSWORD="
+          - "RENTERD_SEED="
+      expose:
+        - port: 9880
+          as: 9880
+          to:
+            - global: true
+        - port: 9881
+          as: 9881
+          to:
+            - global: true 
+  profiles:
+    compute:
+      app:
+        resources:
+          cpu:
+            units: 4
+          memory:
+            size: 4Gi
+          storage:
+            size: 10Gi
+    placement:
+      akash: 
+        attributes:
+        pricing:
+          app:
+            denom: uakt
+            amount: 10000
+  deployment:
+    app:
+      akash:
+        profile: app
+        count: 1
